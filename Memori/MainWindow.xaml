@@ -1,0 +1,32 @@
+﻿<Window x:Class="Memori.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Memori"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="700" Background="Turquoise">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF7E477E" Offset="0"/>
+                <GradientStop Color="#FF425395" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" ></ColumnDefinition>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <UniformGrid Name="Table" Visibility="Collapsed"
+                     Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <StackPanel>
+            <Button Content=" Новая игра " Margin="10,10,10,10" Click="StartGame_Click" Background="#FF3A4A87" Foreground="#FFE9EBF7" FontSize="20" FontFamily="Bahnschrift SemiBold"/>
+            <TextBlock Name="Counter" Text="Сделано ходов: 0" Margin="10,10,10,10" Foreground="#FFA8AED5" FontSize="16" FontFamily="Bahnschrift SemiBold"/>
+            <TextBlock Name="Time" Text="00:00:00" Margin="10,10,10,10" Foreground="#FFA8AED5" FontSize="20" FontFamily="Bahnschrift SemiBold"/>
+        </StackPanel>
+
+    </Grid>
+
+</Window>
