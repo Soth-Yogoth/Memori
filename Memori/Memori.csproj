@@ -16,10 +16,30 @@
     <None Remove="Resources\4.jpg" />
     <None Remove="Resources\5.jpg" />
     <None Remove="Resources\6.jpg" />
+    <None Remove="Resources\Музыка.mp3" />
+    <None Remove="Resources\Победа.mp3" />
+    <None Remove="Resources\Проигрыш.mp3" />
+    <None Remove="Resources\Таймер.mp3" />
     <None Remove="Resources\Фоновая музыка.mp3" />
+    <None Remove="Resources\Щелчёк.mp3" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="bin\Debug\net7.0-windows\Resources\Музыка.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\net7.0-windows\Resources\Победа.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\net7.0-windows\Resources\Проигрыш.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\net7.0-windows\Resources\Таймер.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\net7.0-windows\Resources\Щелчёк.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\0.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -41,6 +61,21 @@
     <Content Include="Resources\6.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\Музыка.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Победа.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Проигрыш.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Таймер.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Щелчёк.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -53,7 +88,7 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
